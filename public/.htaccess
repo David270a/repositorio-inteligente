@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Si el archivo o carpeta solicitado existe (css, js, uploads), servirlo directamente
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# En caso contrario, redirigir todo a index.php conservando la ruta como parámetro "ruta"
+RewriteRule ^(.*)$ index.php?ruta=$1 [QSA,L]
