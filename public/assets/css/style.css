@@ -395,3 +395,64 @@ td a:hover { text-decoration: underline; }
     .layout-repositorio { grid-template-columns: 1fr; }
     .nombre-usuario { display: none; }
 }
+
+/* ---------- Acciones de carpetas ---------- */
+.lista-carpetas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.lista-carpetas .nombre-carpeta {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex: 1;
+    min-width: 0;
+}
+
+.icono-carpeta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: var(--oro-suave);
+    color: var(--oro);
+    font-size: 13px;
+    flex: 0 0 24px;
+}
+
+.boton-eliminar-carpeta {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 32px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--texto-suave);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    opacity: 0.65;
+    transition: background .15s ease, color .15s ease, opacity .15s ease, transform .15s ease;
+}
+
+.lista-carpetas li:hover .boton-eliminar-carpeta,
+.lista-carpetas li:focus-within .boton-eliminar-carpeta {
+    opacity: 1;
+}
+
+.boton-eliminar-carpeta:hover {
+    background: var(--error-fondo);
+    border-color: #e3c3b8;
+    color: #a33a25;
+    opacity: 1;
+    transform: scale(1.05);
+}

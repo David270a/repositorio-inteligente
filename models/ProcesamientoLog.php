@@ -42,6 +42,11 @@ class ProcesamientoLog
              FROM procesamiento_log pl
              INNER JOIN documentos d ON d.id_documento = pl.id_documento
              INNER JOIN usuarios u ON u.id_usuario = d.id_usuario
+             INNER JOIN (
+                 SELECT id_documento, MAX(id_log) AS ultimo_log
+                 FROM procesamiento_log
+                 GROUP BY id_documento
+             ) ult ON ult.id_documento = pl.id_documento AND ult.ultimo_log = pl.id_log
              ORDER BY pl.fecha_evento DESC
              LIMIT :limite"
         );

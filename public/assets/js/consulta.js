@@ -83,3 +83,12 @@ function agregarMensaje(texto, tipo) {
     contenedor.scrollTop = contenedor.scrollHeight;
     return id;
 }
+
+
+// Enter envía la pregunta; Shift + Enter permite un salto de línea.
+document.getElementById('pregunta').addEventListener('keydown', (evento) => {
+    if (evento.key === 'Enter' && !evento.shiftKey) {
+        evento.preventDefault();
+        document.getElementById('form-consulta').requestSubmit();
+    }
+});

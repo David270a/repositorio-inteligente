@@ -17,7 +17,10 @@ $carpetas = Carpeta::listarPorUsuario($usuario['id_usuario']);
                 <?php foreach ($carpetas as $carpeta): ?>
                     <li data-id="<?= $carpeta['id_carpeta'] ?>"
                         onclick="seleccionarCarpeta(<?= $carpeta['id_carpeta'] ?>, this)">
-                        📁 <?= htmlspecialchars($carpeta['nombre']) ?>
+                        <span class="nombre-carpeta"><span class="icono-carpeta">▣</span><?= htmlspecialchars($carpeta['nombre']) ?></span>
+                        <button type="button" class="boton-eliminar-carpeta"
+                                onclick="eliminarCarpeta(event, <?= $carpeta['id_carpeta'] ?>, <?= htmlspecialchars(json_encode($carpeta['nombre']), ENT_QUOTES, 'UTF-8') ?>)"
+                                title="Eliminar carpeta" aria-label="Eliminar carpeta"><span aria-hidden="true">🗑</span></button>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -59,7 +62,7 @@ $carpetas = Carpeta::listarPorUsuario($usuario['id_usuario']);
     </div>
 </div>
 
-<script src="assets/js/repositorio.js"></script>
+<script src="assets/js/repositorio.js?v=20260911"></script>
 <script>
 async function buscarTexto() {
     const termino = document.getElementById('buscador-texto').value.trim();

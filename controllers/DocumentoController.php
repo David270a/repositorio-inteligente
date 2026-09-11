@@ -15,10 +15,22 @@ class DocumentoController
         }
 
         $idCarpeta = (int) ($_POST['id_carpeta'] ?? 0);
+
+        // Un usuario nuevo puede no tener carpetas todavía. Se crean las carpetas
+        // de clasificación automáticamente; así la IA siempre tendrá un destino.
+        foreach (['Contrato', 'Factura', 'Informe', 'Correspondencia'] as $categoriaBase) {
+            Carpeta::asegurarCarpetaCategoria($categoriaBase, (int) $usuario['id_usuario']);
+        }
+
         if ($idCarpeta <= 0) {
-            http_response_code(422);
-            echo json_encode(['error' => 'Debes indicar la carpeta destino.']);
-            return;
+            $idCarpeta = Carpeta::asegurarCarpetaCategoria('Informe', (int) $usuario['id_usuario']);
+        } else {
+            $carpetaSeleccionada = Carpeta::buscarPorId($idCarpeta);
+            if (!$carpetaSeleccionada || (int) $carpetaSeleccionada['id_usuario'] !== (int) $usuario['id_usuario']) {
+                http_response_code(403);
+                echo json_encode(['error' => 'La carpeta seleccionada no pertenece al usuario.']);
+                return;
+            }
         }
 
         try {
@@ -61,6 +73,7 @@ class DocumentoController
         echo json_encode([
             'id_documento' => $idDocumento,
             'estado' => $estadoFinal['estado'] ?? 'pendiente',
+            'id_carpeta_final' => (int) (Documento::buscarPorId($idDocumento)['id_carpeta'] ?? $idCarpeta),
         ]);
     }
 

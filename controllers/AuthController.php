@@ -55,6 +55,9 @@ class AuthController
 
         $idUsuario = Usuario::crear($nombre, $correo, $password, 'usuario');
         $usuario = Usuario::buscarPorId($idUsuario);
+        foreach (['Contrato', 'Factura', 'Informe', 'Correspondencia'] as $categoriaBase) {
+            Carpeta::asegurarCarpetaCategoria($categoriaBase, (int) $idUsuario);
+        }
         Sesion::iniciarSesionUsuario($usuario);
 
         header('Location: ' . rtrim($_ENV['APP_URL'] ?? '', '/') . '/index.php?ruta=repositorio');

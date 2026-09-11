@@ -45,6 +45,16 @@ class Documento
         return $stmt->fetchAll();
     }
 
+
+    public static function moverACarpeta(int $idDocumento, int $idCarpeta): void
+    {
+        $pdo = conectarDB();
+        $stmt = $pdo->prepare(
+            "UPDATE documentos SET id_carpeta = :carpeta WHERE id_documento = :id"
+        );
+        $stmt->execute(['carpeta' => $idCarpeta, 'id' => $idDocumento]);
+    }
+
     public static function actualizarResultadosIA(int $id, string $textoExtraido, string $categoria, string $resumen): void
     {
         $pdo = conectarDB();

@@ -44,6 +44,15 @@ class OrquestadorIA
 
             Documento::actualizarResultadosIA($id, $texto, $resultado['categoria'], $resultado['resumen']);
 
+            // La carpeta se determina por la categoría de la IA, no por la carpeta
+            // desde la que el usuario inició la subida. Si el usuario es nuevo y no
+            // tiene esa carpeta, se crea automáticamente para ese usuario.
+            $idCarpetaCategoria = Carpeta::asegurarCarpetaCategoria(
+                $resultado['categoria'],
+                (int) $documento['id_usuario']
+            );
+            Documento::moverACarpeta($id, $idCarpetaCategoria);
+
             MetadatoExtraido::eliminarPorDocumento($id);
             foreach ($resultado['metadatos'] as $campo => $valor) {
                 MetadatoExtraido::crear($id, (string) $campo, (string) $valor);
