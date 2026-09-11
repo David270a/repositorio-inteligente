@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01003
+Fecha de emision: 2026-06-23
+Proveedor: Grupo Industrial Sabana SAS
+NIT: 905667265-0
+Ciudad: Floridablanca
+
+Cliente: Constructora Nororiente SAS
+
+Detalle:
+- 15 Cableado estructurado (rollo) - $380.000 c/u
+- 3 Impresoras multifuncionales - $980.000 c/u
+
+Subtotal: $8.640.000
+IVA incluido
+Total a pagar: $8.640.000 COP
+
+Condiciones de pago: 30 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01005
+Fecha de emision: 2026-05-07
+Proveedor: Comercializadora del Oriente SAS
+NIT: 901728977-7
+Ciudad: Cali
+
+Cliente: Manufacturas Bucaramanga SAS
+
+Detalle:
+- 2 Servidores rack 2U - $6.200.000 c/u
+- 3 Kit de videoconferencia - $1.200.000 c/u
+
+Subtotal: $16.000.000
+IVA incluido
+Total a pagar: $16.000.000 COP
+
+Condiciones de pago: 15 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

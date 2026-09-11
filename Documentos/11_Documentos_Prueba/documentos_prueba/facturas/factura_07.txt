@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01007
+Fecha de emision: 2026-03-26
+Proveedor: Grupo Industrial Sabana SAS
+NIT: 907377459-4
+Ciudad: Floridablanca
+
+Cliente: Logística del Caribe SAS
+
+Detalle:
+- 8 Monitores 24 pulgadas - $650.000 c/u
+- 3 Impresoras multifuncionales - $980.000 c/u
+
+Subtotal: $8.140.000
+IVA incluido
+Total a pagar: $8.140.000 COP
+
+Condiciones de pago: 60 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

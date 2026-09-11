@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01009
+Fecha de emision: 2026-05-09
+Proveedor: Grupo Industrial Sabana SAS
+NIT: 904684531-5
+Ciudad: Bogotá
+
+Cliente: Distribuciones Santander Ltda
+
+Detalle:
+- 6 Escritorios modulares - $550.000 c/u
+- 15 Cableado estructurado (rollo) - $380.000 c/u
+
+Subtotal: $9.000.000
+IVA incluido
+Total a pagar: $9.000.000 COP
+
+Condiciones de pago: 15 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

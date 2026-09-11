@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01006
+Fecha de emision: 2026-06-01
+Proveedor: Comercializadora del Oriente SAS
+NIT: 904226067-1
+Ciudad: Floridablanca
+
+Cliente: Constructora Nororiente SAS
+
+Detalle:
+- 10 Licencias de software anual - $1.500.000 c/u
+- 3 Kit de videoconferencia - $1.200.000 c/u
+
+Subtotal: $18.600.000
+IVA incluido
+Total a pagar: $18.600.000 COP
+
+Condiciones de pago: 15 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

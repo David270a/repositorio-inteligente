@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01004
+Fecha de emision: 2026-04-25
+Proveedor: Manufacturas Bucaramanga SAS
+NIT: 906647119-1
+Ciudad: Cali
+
+Cliente: Logística del Caribe SAS
+
+Detalle:
+- 10 Licencias de software anual - $1.500.000 c/u
+- 12 Sillas ergonómicas de oficina - $420.000 c/u
+
+Subtotal: $20.040.000
+IVA incluido
+Total a pagar: $20.040.000 COP
+
+Condiciones de pago: 15 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

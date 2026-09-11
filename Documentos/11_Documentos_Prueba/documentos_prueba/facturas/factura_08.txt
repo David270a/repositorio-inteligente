@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01008
+Fecha de emision: 2026-04-23
+Proveedor: Logística del Caribe SAS
+NIT: 905479144-1
+Ciudad: Barranquilla
+
+Cliente: Distribuciones Santander Ltda
+
+Detalle:
+- 2 Servidores rack 2U - $6.200.000 c/u
+- 2 Servidores rack 2U - $6.200.000 c/u
+
+Subtotal: $24.800.000
+IVA incluido
+Total a pagar: $24.800.000 COP
+
+Condiciones de pago: 30 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

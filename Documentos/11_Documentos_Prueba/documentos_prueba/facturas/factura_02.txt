@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01002
+Fecha de emision: 2026-04-25
+Proveedor: Manufacturas Bucaramanga SAS
+NIT: 904903402-8
+Ciudad: Barranquilla
+
+Cliente: TecnoAndina SAS
+
+Detalle:
+- 5 Computadores portátiles Lenovo - $2.800.000 c/u
+- 8 Monitores 24 pulgadas - $650.000 c/u
+
+Subtotal: $19.200.000
+IVA incluido
+Total a pagar: $19.200.000 COP
+
+Condiciones de pago: 15 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.

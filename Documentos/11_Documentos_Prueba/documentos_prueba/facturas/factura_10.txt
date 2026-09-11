@@ -1,0 +1,21 @@
+FACTURA DE VENTA
+Numero: FE-01010
+Fecha de emision: 2026-03-17
+Proveedor: TecnoAndina SAS
+NIT: 904539704-9
+Ciudad: Bogotá
+
+Cliente: Manufacturas Bucaramanga SAS
+
+Detalle:
+- 15 Cableado estructurado (rollo) - $380.000 c/u
+- 10 Licencias de software anual - $1.500.000 c/u
+
+Subtotal: $20.700.000
+IVA incluido
+Total a pagar: $20.700.000 COP
+
+Condiciones de pago: 45 dias fecha factura.
+Metodo de pago: Transferencia bancaria.
+
+Gracias por su compra.
